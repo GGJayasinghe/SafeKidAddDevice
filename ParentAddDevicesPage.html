@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheetDevices.css">
+    <title>HomePage_Devices</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- header nav bar starts-->
+    <script src="AddDevice.js"></script>
+    <img class="img-responsive" src="ChildSoccor.jpg" alt="childrenPlay" height="20%">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="..."></iframe>
+                </div>
+            </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Previous Cases</a></li>
+            <li><a href="#">About Product</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+    </nav> 
+    <!--Header nav bar ends-->
+
+    <!--right nav bar starts-->
+    <script src="AddDevice.js"></script>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; </button>
+    </div>
+    <!--right nav bar ends-->
+
+    <!--content starts-->
+    <div class="content">
+
+        <!--Grid view/ box view starts-->
+        <div id="view"></div>
+        <!--Grid view/ box view ends-->
+        
+        <h1>Devices</h1>
+        
+        <!--devices details starts-->
+        <div id="device_details">
+          <button type="button" class="btn btn-primary">No of Devices <span class="badge">3</span></button>
+          <button type="button" class="btn btn-primary">Add New Device <span class="badge">+</span></button>
+          <button type="button" class="btn btn-primary">Remove Device <span class="badge">-</span></button>
+        </div>
+
+        <!--Add Devices-->
+        <!-- Three columns -->
+        <div class="row">
+          <div class="column" onclick="openTab('b1');" style="background:rgb(70, 73, 228);">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img src="image.jpg" class="media-object" style="width:60px">
+              </div>
+              <div class="media-body">
+                <p>Device No :</p>
+                <h4>xxxxxx</h4>
+                <hr/>
+                <p>Name: </p>
+                <h4 class="media-heading">Kasun Perera</h4>
+                <hr/>
+                <p>Age: 12</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column" onclick="openTab('b2');" style="background:rgb(70, 73, 228);">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img src="image.jpg" class="media-object" style="width:60px">
+              </div>
+              <div class="media-body">
+                <p>Device No :</p>
+                <h4>xxxxxx</h4>
+                <hr/>
+                <p>Name: </p>
+                <h4>Kasun Perera</h4>
+                <hr/>
+                <p>Age: 12</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column" onclick="openTab('b3');" style="background:rgb(70, 73, 228);">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img src="image.jpg" class="media-object" style="width:60px">
+              </div>
+              <div class="media-body">
+                <p>Device No :</p>
+                <h4>xxxxxx</h4>
+                <hr/>
+                <p>Name: </p>
+                <h4 class="media-heading">Kasun Perera</h4>
+                <hr/>
+                <p>Age: 12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+               
+        <!--devices  details ends-->
+
+        <!--button Add new devices starts-->
+        <div id="button_new_device">
+
+            <!--popup adding details starts-->
+            <div id="add_details_popup"></div>
+            <!--popup adding details ends-->
+
+        </div>
+        <!--button Add new devices ends-->
+
+    </div>
+    <!--content ends-->
+</body>
+</html>
